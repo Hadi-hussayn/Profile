@@ -1,3 +1,6 @@
+import { injectGlobal } from 'styled-components';
+
+injectGlobal`
 body {
   margin: 0;
   padding: 0;
@@ -12,3 +15,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+`
