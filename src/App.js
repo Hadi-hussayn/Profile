@@ -1,20 +1,31 @@
-import React, { Component } from "react";
-import AppWrapper from "./appcss";
-import logo from "./logo.svg";
-import { Layout } from "antd";
-import DefaultHeader from "./containers/Header/index";
+import React, { Component } from 'react';
+import AppWrapper from './appcss';
+import { Layout } from 'antd';
+import Slider from './containers/Slider';
+import About from './containers/About us';
+import Features from './containers/Features';
+import Services from './containers/Services';
+import Company from './containers/Company';
+import Sidebar from './containers/Sidebar';
 
-const { Content } = Layout;
+// import IconDefault from "./components/Elements/icons/icon";
+
+import SideNavigation from './containers/Sidebarnew/index';
+
+const { Sider, Content } = Layout;
 
 class App extends Component {
-  render() {
-    return (
-      <Layout>
-        <DefaultHeader />
-        <Content />
-      </Layout>
-    );
-  }
+	render() {
+		return (
+			<Layout>
+				{/* <SideNavigation /> */}
+				<Slider />
+				<About />
+				<Features />
+				<Services />
+				<Company />
+			</Layout>
+		);
+	}
 }
-
 export default App;

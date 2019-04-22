@@ -1,0 +1,70 @@
+props -> properties;
+
+Component {
+  <Menu>
+    <Header title={props.title}/>
+    <Header title={}/>
+  </Menu> 
+}
+
+<Component title="title"/>
+
+Class Component {
+  state = {
+    collapsed: fasle,
+  }
+
+  handleCollapse = () => {
+    this.setState({ collapsed: !this.state.collapsed })
+  }
+
+  <Menu
+    style={{ width: this.state.collapsed ? "50px" : "200px" }}
+    onClick={() => this.handleCollapse()}
+  >
+
+  </Menu>
+}
+
+src -> Components -> Heading -> {
+  import styled from 'styled-components';
+
+  const Header = styled.h1`
+    colors: red;
+    font-size: 19px;
+    .......
+  `;
+}
+
+
+import Heading from 'src/commponents/Heading';
+Folder => 
+  index.js 
+    import Wrapper from './styles';
+    
+    Component => {
+      retrun (
+        <Wrapper>
+          <Menu className="Menu"/>
+          <h1 className="heading">Heading</h1>
+          <h1 className="heading">Heading</h1>
+        </Wrapper>
+      )
+    }
+
+  styles.js
+    import styled from 'styled-comoponents
+
+    const Wrapper = styled.div`
+      styles....
+
+      .heading {
+        styles.....
+  
+      }
+
+      .Menu {
+        styles....
+      }
+      
+    `;

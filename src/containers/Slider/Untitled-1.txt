@@ -1,0 +1,17 @@
+Layout Container:
+
+  <Layout>
+    <Layout.Sider>
+      <Sidebar />
+    </Layout.Sider>
+    <Layout.Content>
+      <Slider />
+    </Layout.Content>
+  </Layout>
+
+
+Components:
+  Sidebar Component
+  Slider
+  SearchField
+  StyledInput
